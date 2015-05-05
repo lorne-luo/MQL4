@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Account Statement</title>
+
+    <style type="text/css">
+    <!--
+    .msdate { mso-number-format:"General Date"; }
+    .mspt   { mso-number-format:\#\,\#\#0\.00;  }
+    //-->
+    </style>
+
+</head>
+
+<body>
+<div style="font: 25pt Times New Roman"><b>Account Statement</b></div>
+<hr />
+
+<div style="font: 12pt Tahoma, Arial">
+<table width="100%" border="0">
+  <tr>
+    <td width="20%"><b>Account: </b><!!-ACCOUNTNUM---></td>
+    <td width="27%"><b>Name: </b><!!-ACCOUNTNAME---></td>
+    <td width="22%"><b>Broker: </b><!!-BROKER---></td>
+    <td width="31%"></td>
+  </tr>
+  <tr>
+    <td class=mspt><b>Equity: </b><!!-EQUITY---></td>
+    <td class=mspt><b>Free Margin: </b><!!-FREEMARGIN---></td>
+    <td><b>Currency: </b><!!-CURRENCY---></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="3"><b>Update Time: </b><!!-UPDATETIME---></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+</b></div>
+<div align="center" style="font: 10pt Tahoma,Arial;">
+<br>
+<table width="94%" border="0">
+  <tr>
+    <td colspan="11" align="left" style="font: 12pt Tahoma,Arial;"><b>Holding Orders: </b></td>
+    </tr>
+  <tr align=center bgcolor="#C0C0C0">
+    <td>Ticket</td>
+    <td>Open Time</td>
+    <td>Type</td>
+    <td>Size</td>
+    <td>Symbol</td>
+    <td>Open Price</td>
+    <td>S / L </td>
+    <td>T / P </td>
+    <td>Swap</td>
+    <td>Profit</td>
+    <td>Comment</td>
+    </tr>
+<!!-HOLDINGORDERS--->
+</table>
+
+<p>&nbsp;</p>
+<table width="94%" border="0">
+  <tr>
+    <td colspan="8" align="left" style="font: 12pt Tahoma,Arial;"><b>Pending Orders: </b></td>
+  </tr>
+  <tr align=center bgcolor="#C0C0C0">
+    <td>Ticket</td>
+    <td>Open Time</td>
+    <td>Type</td>
+    <td>Size</td>
+    <td>Symbol</td>
+    <td>Open Price</td>
+    <td>S / L </td>
+    <td>T / P </td>
+    <td>Expire Time </td>
+    <td>Comment</td>
+  </tr>
+<!!-PENDINGORDERS--->
+</table>
+<p>&nbsp;</p>
+</div>
+<p>&nbsp;</p>
+</body>
+</html>
