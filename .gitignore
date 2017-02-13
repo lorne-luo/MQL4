@@ -1,0 +1,16 @@
+*.exe
+*.bmp
+*.ex4
+.svn
+*.hst
+*.raw
+*.data
+*.ico
+*.xls
+*.html
+history/
+logs/
+Sounds/
+tester/
+config/
+profiles/
